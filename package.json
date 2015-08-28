@@ -1,13 +1,12 @@
 {
   "name": "restman-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "config": "^1.15.0",
     "glob": "^5.0.14",
     "lodash": "^3.10.1"
   },
