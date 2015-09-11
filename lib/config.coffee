@@ -8,8 +8,8 @@ loadConfig = (configDirPath) ->
   content = {}
   _.each configFilePaths, (configFilePath) ->
     configFileName = path.basename configFilePath, '.coffee'
-    configName =  configFileName.replace /(\_\w)/g, (m) -> m[1].toUpperCase()
-    content[configName] =  require configFilePath
+    configName = _.snakeCase configFileName
+    content[configName] = require configFilePath
   content
 
 getImpl = (object, property) ->
